@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Lobster Two', cursive; */
+  font-family: "Montserrat Alternates", sans-serif;
+  scroll-behavior: smooth;
+  /* a faire js */
+}
+
+/* bgvideo */
+#bgvideo {
+  /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1; */
+  position: absolute;
+  min-width: 100%;
+  right: 0;
+  bottom: 0;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  background-size: cover;
+  text-align: center;
+  /* opacity: 0.7; */
+}
+
+/* fin bgvideo */
+
+/* debut style animation texte */
+.title-animation {
+  color: whitesmoke;
+  text-align: center;
+  font-weight: 400;
+  font-size: 35px;
+}
+/* fin style animation texte */
+
+/* header */
+header {
+  background: black;
+  width: 100%;
+  min-height: 8vh;
+  position: fixed;
+  z-index: 200;
+}
+
+/* fin header */
+
+h3 + hr {
+  border: 1px solid;
+  width: 5%;
+  margin: auto;
+}
+
+/*  debut des h */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Lobster", cursive;
+}
+
+
+.logo{
+    margin: inherit;
+}
+
+h1 {
+  color: white;
+}
+
+h1.logo + hr {
+  border-color: white;
+  float: left;
+  margin: 0 0 0 2vh;
+  width: 5%;
+  height: 1px;
+}
+
+h3 + hr {
+  border-color: #d5ada6;
+}
+
+/* .hr-propos{
+    margin: -40px 0 0;
+} */
+
+h2,
+span {
+  color: black;
+  text-align: center;
+}
+
+h5 {
+  color: gray;
+  font-size: 100px;
+}
+
+h4 {
+  font-size: 25px;
+  margin: 10% 0;
+}
+
+/* fin des h */
+p {
+  margin: 0 auto 10%;
+  width: 90%;
+}
+
+main > section {
+  padding: 8vh 20px 0;
+  min-height: 100vh;
+}
+
+section#propos {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("/assets/img/passion.png");
+  background-repeat: no-repeat;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+  /* background: rgb(226, 224, 224) */
+  /* background: #d5ada6; */
+}
+
+section#propos > article,
+figure {
+  width: 100%;
+  min-width: 280px;
+  /* flex: 1; */
+  margin: 10px auto;
+
+}
+
+.article-flex {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+section#propos > article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+
+}
+
+.text_propos {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+ul {
+  list-style: none;
+}
+
+article#apropos>p {
+    width: 50%;
+}
+
+article#apropos > ul > li,
+li#call > a[title] {
+  background: url(../assets/img/fleche.svg) 0 0 no-repeat;
+  padding: 0 35px;
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  margin: 10px 0;
+}
+
+section#technique {
+  background: black;
+}
+
+section#book {
+  background: black;
+}
+
+section#book .realisation{
+  color: white;
+}
+
+section#technique > section,
+section#pro > section,
+section#book > section {
+  display: flex;
+  flex-wrap: wrap;
+}
+section#book > section {
+  justify-content: center;
+}
+section#technique > h3 {
+  color: gainsboro;
+}
+
+section#technique > h3,
+section#pro > h3,
+section#book > h3 {
+  color: black;
+  text-align: center;
+  font-size: 40px;
+}
+
+section#technique > h3 + hr,
+section#pro > h3 + hr,
+section#book > h3 + hr {
+  margin: auto;
+}
+
+section#technique > section > article,
+section#pro > section > article {
+  display: flex;
+  width: 50%;
+  min-width: 300px;
+  min-height: 300px;
+  margin-top: 5%;
+  flex: 1;
+  padding-top: 2%;
+  flex-wrap: wrap;
+}
+
+section#technique > section > article > div {
+  display: flex;
+  flex-direction: column;
+}
+
+div.desc > p,
+progress {
+  color: white;
+  margin: 18px;
+}
+
+div.desc {
+  height: 130px;
+}
+
+article > hgroup {
+  margin-left: 0%;
+}
+
+section#pro > section > article > header {
+  position: relative;
+  z-index: 3;
+}
+
+article > header > h2 {
+  font-size: 25px;
+  text-align: right;
+}
+
+article > header > h3 {
+  font-size: 15px;
+  color: gray;
+  text-align: right;
+}
+
+article > header > h4 {
+  background: orangered;
+  width: 175px;
+  min-height: 70px;
+  position: relative;
+  top: -100px;
+  left: -50px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 25px;
+  margin: 0;
+  z-index: 3;
+}
+
+section#pro > section > article {
+  background: black;
+  color: gainsboro;
+  margin: 7% 0 0;
+  border: 30px solid rgb(226, 224, 224);
+}
+section#book > section > figure {
+  width: 25%;
+  min-width: 500px;
+  height: 239px;
+  border: 5px solid grey;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  box-shadow: 1px 2px 10px black;
+}
+figure figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 239px;
+  width: 100%;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 239px;
+  left: 0;
+  transition-property: top;
+  transition: 1s;
+  padding: 2%;
+}
+figure:not(:hover) {
+  filter: grayscale(0);
+}
+figure:hover {
+  filter: grayscale(1);
+  transition: 1s;
+}
+figure:hover figcaption {
+  top: 0px;
+}

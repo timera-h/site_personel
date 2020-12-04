@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Timera Hawa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/anime.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
+    <!-- script js -->
+    <!-- <script>
+        $(function(){
+    $(window).scroll(function() {
+       if($(window).scrollTop() >= 100) {
+         $('header').addClass('scrolled');
+       }
+      else {
+        $('header').removeClass('scrolled');
+      }
+    });
+  });
+    </script> -->
+    <script type="module" src="js/menu.js"></script>
+    <script type="module" src="js/appel.js"></script>
+    <script type="module" src="js/telephone.js"></script>
+    <script type="module" src="js/anime.js"></script>
+</head>
+
+<body>
+    <header class="bg-black-90 fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l" id="header">
+        <h1 class="logo">Timera Hawa</h1>
+        <hr>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#propos">Qui suis je ?</a></li>
+                <li><a href="#book">Réalisations Web et Print</a></li>
+                <li><a href="#pro">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <p class="title-animation">Je suis
+            <span class="txt-rotate" data-period="2000"
+                data-rotate='[  "développeuse web", "curieuse", "autodidacte", "joyeuse !"]'></span>
+        </p>
+        <!-- <h2>#<span></span></h2> -->
+        <a href="#apropos" id="mouse"><span></span></a>
+    </section>
+
+    <main>
+        <section id="propos">
+            <article id="apropos">
+                <h3>A propos</h3>
+                <hr class="hr-propos">
+                <article class="article-flex">
+                    <div class="text_propos">
+                <h4>Pourquoi développeuse web ?</h4>
+                <p> Ayant toujours été attiré par le numérique, l'informatique et
+                    la technologie, déterminée à atteindre mes objectifs, 
+                    c'est tout naturellement que je me suis orientée vers ce secteur.
+                    Mon parcour de formation dans lesquelles j'ai appris les bases fondamentales et de nouveaux langages de programmation,
+                    ce qui à révélé en moi une réelle apétence pour le développement web.             
+                </p></div>
+<div class="text_propos">
+                <h4>Passion ?</h4>
+                <p> Ouverte sur le monde j'aime les voyages,
+                    la cuisine découvrir d'autres cultures et différents modes de vie. </p></div>
+</article>
+            </article>
+            <!-- <figure>
+                <img src="assets/img/hawa.png" alt="Nom prenom">
+            </figure> -->
+        </section>
+        <!-- début Réalisation web et print -->
+        <section id="book">
+            <h3 class="realisation">Réalisations Web</h3>
+            <hr>
+            <section>
+                <figure><img src="assets/img/marvel-vs-dccomics.png" alt="Salsa">
+                    <figcaption><p>Marvel x Dc commics</p>
+                         <p>Réaliser en groupe en Methode agile Scrum. AJAX faire une appel API avec axios.</p>
+                        <p>Technos utilisée: HTML5 CSS3 JS </p>
+                    </figcaption>
+                </figure>
+                <figure><img src="assets/img/helloada.png" alt="Salsa">
+                    <figcaption><br>
+                        <br>
+                        <p>Helloada</p>
+                        <p>Insertion des femmes dans la tech, site réalisé au cours de mon stage</p>
+                        <p> Technos utilisée: 
+                            <br> Frontend: Handlebars, JS
+                        <br>Backend: Express, Node, Mongodb </p>
+
+                        <!--
+                        <br> Fonctionalitées:
+                        <br> - Inscription candidats / entreprises
+                        <br> - Connexion candidats / entreprises
+                        <br> - Profil candidat / entreprise
+                        <br> - Modification des données utilisateurs
+                        <br> - Dashboard Admin 
+                        <br> - Annonce d'offre d'emploi -->
+                    </figcaption>
+                </figure>
+                <figure><img src="assets/img/mali-tijara.png" alt="Salsa">
+                    <figcaption> <br><br>
+                        <p>Mali Tijara</p>
+                        <p>Projet chef d'oeuvre, site e-commerce vente de produits naturels du mali</p>
+                        <p>Technos utilisée: Mern stack
+                            <br> Frontend: React
+                            <br> Backend: Mongodb, Express, Node
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure><img src="assets/img/lipstick.png" alt="Salsa">
+                    <figcaption>Légende de l'image</figcaption>
+                </figure>
+            </section>
+            <h3 class="realisation">Réalisations Print</h3>
+            <hr>
+            <section>
+                <figure><img src="assets/img/Ours-et-tasse.png" alt="Salsa">
+                    <figcaption><p>Ours + tasse</p>
+                        <p>Logiciel graphique: Illustrator </p> <p>Outils utilisé: Pathfinder</p> </figcaption>
+                </figure>
+                <figure><img src="assets/img/vase.png" alt="Salsa">
+                    <figcaption><p>Vase</p>
+                        <p>Logiciel graphique: Illustrator</p>
+                    <p>Outils utilisé: Dégradé et Ombre</p></figcaption>
+                </figure>
+                <figure><img src="assets/img/rose-2.png" alt="Salsa">
+                    <figcaption><p>Rose</p>
+                        <p>Logiciel graphique: Photoshop</p>
+                    <p>Outils utilisé: Sélection (détourage de photo)</p></figcaption>
+                </figure>
+                <figure><img src="assets/img/gif-anime.gif" alt="Salsa">
+                    <figcaption><p>Gif animé</p>
+                        <p>Logiciel graphique: Photoshop</p>
+                    <p>Outils utilisé: Montage</p></figcaption>
+                </figure>
+            </section>
+        </section>
+        <!-- fin réalisation -->
+        <!-- <section id="technique">
+
+            <h3>Compétences Techniques</h3>
+            <hr>
+            <section>
+                <article>
+
+                    <hgroup>
+                        <h5>45%</h5>
+                        <h5>69%</h5>
+                    </hgroup>
+
+                    <div>
+
+                        <div class="desc">
+                            <p>Maquetter une application<span> 45%</span></p>
+                            <progress max="100" value="45"></progress>
+                        </div>
+
+                        <div class="desc">
+                            <p>Html CSS JS<span> 69%</span></p>
+                            <progress max="100" value="69"></progress>
+                        </div>
+
+                    </div>
+                </article>
+                <article>
+                    <hgroup>
+                        <h5>72%</h5>
+                        <h5>20%</h5>
+                    </hgroup>
+
+                    <div>
+
+                        <div class="desc">
+                            <p>Framework<span> 72%</span></p>
+                            <progress max="100" value="72"></progress>
+                        </div>
+
+                        <div class="desc">
+                            <p>Gestion de Projet (Methode Agile)<span> 20%</span></p>
+                            <progress max="100" value="20"></progress>
+                        </div>
+
+                    </div>
+
+                </article>
+            </section>
+        </section> -->
+
+        <section id="pro">
+            <h3>Contact</h3>
+            <hr>
+           <!--  <section>
+                <article>
+                    <header>
+                        <h2 title="lien">Societe ou Stage</h2>
+                        <h3>lieu ou le poste</h3>
+                        <h4>2000/2000</h4>
+                    </header>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugiat, aliquam unde alias illum ipsum voluptatibus,
+                        quaerat quibusdam quia nesciunt nisi laborum iusto saepe
+                        maxime vitae doloremque temporibus voluptatem tenetur nihil.
+                    </p>
+                </article>
+
+                <article>
+                    <header>
+                        <h2>Societe ou Stage</h2>
+                        <h3>lieu ou le poste</h3>
+                        <h4>2000/2000</h4>
+                    </header>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugiat, aliquam unde alias illum ipsum voluptatibus,
+                        quaerat quibusdam quia nesciunt nisi laborum iusto saepe
+                        maxime vitae doloremque temporibus voluptatem tenetur nihil.
+                    </p>
+                </article>
+
+            </section>
+            <h3>Expériences Professionnelles</h3>
+            <hr>
+            <section>
+                <article>
+                    <header>
+                        <h2>Societe ou Stage</h2>
+                        <h3>lieu ou le poste</h3>
+                        <h4>2000/2000</h4>
+                    </header>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugiat, aliquam unde alias illum ipsum voluptatibus,
+                        quaerat quibusdam quia nesciunt nisi laborum iusto saepe
+                        maxime vitae doloremque temporibus voluptatem tenetur nihil.
+                    </p>
+                </article>
+
+                <article>
+                    <header>
+                        <h2>Societe ou Stage</h2>
+                        <h3>lieu ou le poste</h3>
+                        <h4>2000/2000</h4>
+                    </header>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Fugiat, aliquam unde alias illum ipsum voluptatibus,
+                        quaerat quibusdam quia nesciunt nisi laborum iusto saepe
+                        maxime vitae doloremque temporibus voluptatem tenetur nihil.
+                    </p>
+                </article>
+
+            </section> -->
+            <ul>
+                <li><a href="mailto:timera.barry@gmail.com" title="lien">Envoyer un mail</a></li>
+                <li><a href="https://fr.linkedin.com/in/hawa-timera-0981a81a3" title="lien"
+                        target="new">Linkedin</a></li>
+                <li id="call"> <a href="" class="compose">Appeler</a></li>
+            </ul>
+        </section>
+    
+    </main>
+
+
+    <!-- bg video -->
+    <!-- <video autoplay muted id="bgvideo" loop>
+        <source src="assets/video/slide.mp4" type="video/mp4">
+    </video> -->
+    <figure id="bgvideo">
+        <img src="assets/img/th.svg" alt="logo">
+    </figure>
+</body>
+
+</html>
