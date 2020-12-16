@@ -176,7 +176,8 @@ nav {
 
   a.compose {
     display: block;
-    background: yellowgreen;
+    background: #d5ada6;
+    color: white;
     width: 100%;
     text-align: center;
     position: fixed;
@@ -236,11 +237,11 @@ nav {
 
   .burger {
     display: block;
-    height: 7vh;
+    height: 4vh;
     width: 7vw;
     position: relative;
     top: 2vh;
-    left: calc(95% - 7vw);
+    left: calc(95% - 38vw);
     cursor: pointer;
   }
 

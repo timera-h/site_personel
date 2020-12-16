@@ -122,8 +122,8 @@ section#propos {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background-image: url("/assets/img/passion.png");
-  background-repeat: no-repeat;
+  /* background-image: url("/assets/img/passion.png");
+  background-repeat: no-repeat; */
 }
 
 main {
@@ -141,6 +141,10 @@ figure {
   /* flex: 1; */
   margin: 10px auto;
 
+}
+
+#apropos hr{
+  margin-top: 0;
 }
 
 .article-flex {
@@ -202,7 +206,7 @@ section#technique {
 }
 
 section#book {
-  background: black;
+  background: #d5ada6;
 }
 
 section#book .realisation{
@@ -297,17 +301,33 @@ article > header > h4 {
   z-index: 3;
 }
 
-section#pro > section > article {
+section#pro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* section#pro ul{
+
+} */
+
+section#pro ul li>img{
+  height: 20px;
+  width: auto;
+}
+
+/* section#pro > section > article {
   background: black;
   color: gainsboro;
   margin: 7% 0 0;
   border: 30px solid rgb(226, 224, 224);
-}
+} */
 section#book > section > figure {
   width: 25%;
   min-width: 500px;
   height: 239px;
-  border: 5px solid grey;
+  border: 5px solid black;
   overflow: hidden;
   position: relative;
   cursor: pointer;
