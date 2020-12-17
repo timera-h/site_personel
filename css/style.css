@@ -110,7 +110,7 @@ h4 {
 /* fin des h */
 p {
   margin: 0 auto 10%;
-  width: 90%;
+  width: 100%;
 }
 
 main > section {
@@ -166,7 +166,7 @@ section#propos > article {
 }
 
 .text_propos {
-  width: 33%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
