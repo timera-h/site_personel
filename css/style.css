@@ -71,8 +71,13 @@ h5 {
     margin: inherit;
 }
 
+.logo a{
+  font-family: "Lobster", cursive;
+}
+
 h1 {
   color: white;
+
 }
 
 h1.logo + hr {
