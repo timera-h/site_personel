@@ -123,11 +123,14 @@ main > section {
   min-height: 100vh;
 }
 
+section{
+  box-shadow: 4px 2px 20px 5px rgb(0, 0, 0, .5);
+}
+
 section#propos {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  box-shadow: 4px 2px 20px 5px rgb(0, 0, 0, .5);
   /* background-image: url("/assets/img/passion.png");
   background-repeat: no-repeat; */
 }
