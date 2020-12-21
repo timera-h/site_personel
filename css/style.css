@@ -320,6 +320,7 @@ section#pro {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  background: white;
 }
 
 section#pro ul{
