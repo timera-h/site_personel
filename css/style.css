@@ -66,18 +66,16 @@ h5 {
   font-family: "Lobster", cursive;
 }
 
-
-.logo{
-    margin: inherit;
+.logo {
+  margin: inherit;
 }
 
-.logo a{
+.logo a {
   font-family: "Lobster", cursive;
 }
 
 h1 {
   color: white;
-
 }
 
 h1.logo + hr {
@@ -123,8 +121,10 @@ main > section {
   min-height: 100vh;
 }
 
-section#pro, section#propos, section#book{
-  box-shadow: 4px 2px 20px 5px rgb(0, 0, 0, .5);
+section#pro,
+section#propos,
+section#book {
+  box-shadow: 4px 2px 20px 5px rgb(0, 0, 0, 0.5);
 }
 
 section#propos {
@@ -149,10 +149,9 @@ figure {
   min-width: 280px;
   /* flex: 1; */
   margin: 10px auto;
-
 }
 
-#apropos hr{
+#apropos hr {
   margin-top: 0;
 }
 
@@ -171,7 +170,6 @@ section#propos > article {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-
 }
 
 .text_propos {
@@ -182,7 +180,7 @@ section#propos > article {
   flex-direction: column;
 }
 
-.text_propos img{
+.text_propos img {
   width: 20px;
   height: auto;
 }
@@ -201,8 +199,8 @@ ul {
   list-style: none;
 }
 
-article#apropos>p {
-    width: 50%;
+article#apropos > p {
+  width: 50%;
 }
 
 article#apropos > ul > li,
@@ -223,7 +221,7 @@ section#book {
   background: #d5ada6;
 }
 
-section#book .realisation{
+section#book .realisation {
   color: white;
 }
 
@@ -324,7 +322,7 @@ section#pro {
   background: white;
 }
 
-section#pro ul{
+section#pro ul {
   list-style: none;
   width: 100%;
   display: flex;
@@ -333,7 +331,7 @@ section#pro ul{
   flex-wrap: wrap;
 }
 
-section#pro ul li{
+section#pro ul li {
   width: 200px;
   height: 50px;
   background: black;
@@ -347,15 +345,14 @@ section#pro ul li{
   margin: 5px;
 }
 
-section#pro ul li:hover{
+section#pro ul li:hover {
   box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-section#pro ul li>img{
+section#pro ul li > img {
   height: 20px;
   width: auto;
   margin: 0 5px;
-
 }
 
 /* section#pro > section > article {
