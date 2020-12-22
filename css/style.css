@@ -365,7 +365,7 @@ section#book > section > figure {
   width: 25%;
   min-width: 500px;
   height: 239px;
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
   position: relative;
   cursor: pointer;
