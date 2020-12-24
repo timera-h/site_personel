@@ -359,13 +359,9 @@ section#pro ul li > img {
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
-.flip-card-print{
-  background-color: transparent;
+.flip-card.print{
   width: 200px;
   height: 200px;
-  margin: 10px;
-  /* border: 1px solid #f1f1f1; */
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
@@ -379,7 +375,7 @@ section#pro ul li > img {
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner, .flip-card-print:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
