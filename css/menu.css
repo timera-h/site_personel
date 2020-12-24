@@ -176,7 +176,7 @@ nav {
 
   a.compose {
     display: block;
-    background: #d5ada6;
+    background: rgba(0, 0, 0, 0.699);
     color: white;
     width: 100%;
     text-align: center;
