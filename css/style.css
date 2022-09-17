@@ -66,9 +66,12 @@ h5 {
   font-family: "Lobster", cursive;
 }
 
+.logo {
+  margin: inherit;
+}
 
-.logo{
-    margin: inherit;
+.logo a {
+  font-family: "Lobster", cursive;
 }
 
 h1 {
@@ -110,7 +113,7 @@ h4 {
 /* fin des h */
 p {
   margin: 0 auto 10%;
-  width: 90%;
+  width: 100%;
 }
 
 main > section {
@@ -118,20 +121,24 @@ main > section {
   min-height: 100vh;
 }
 
+section#pro,
+section#propos,
+section#book {
+  box-shadow: 4px 2px 20px 5px rgb(0, 0, 0, 0.5);
+}
+
 section#propos {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background-image: url("/assets/img/passion.png");
-  background-repeat: no-repeat;
+  /* background-image: url("/assets/img/passion.png");
+  background-repeat: no-repeat; */
 }
 
 main {
   width: 100%;
   min-height: 100vh;
   background: white;
-  /* background: rgb(226, 224, 224) */
-  /* background: #d5ada6; */
 }
 
 section#propos > article,
@@ -140,7 +147,10 @@ figure {
   min-width: 280px;
   /* flex: 1; */
   margin: 10px auto;
+}
 
+#apropos hr {
+  margin-top: 0;
 }
 
 .article-flex {
@@ -158,15 +168,19 @@ section#propos > article {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-
 }
 
 .text_propos {
-  width: 33%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.text_propos img {
+  width: 20px;
+  height: auto;
 }
 
 img {
@@ -176,15 +190,15 @@ img {
 
 a {
   text-decoration: none;
-  color: gray;
+  color: inherit;
 }
 
 ul {
   list-style: none;
 }
 
-article#apropos>p {
-    width: 50%;
+article#apropos > p {
+  width: 50%;
 }
 
 article#apropos > ul > li,
@@ -202,10 +216,10 @@ section#technique {
 }
 
 section#book {
-  background: black;
+  background: #d5ada6;
 }
 
-section#book .realisation{
+section#book .realisation {
   color: white;
 }
 
@@ -217,6 +231,7 @@ section#book > section {
 }
 section#book > section {
   justify-content: center;
+  padding: 10px 0;
 }
 section#technique > h3 {
   color: gainsboro;
@@ -253,11 +268,6 @@ section#technique > section > article > div {
   flex-direction: column;
 }
 
-div.desc > p,
-progress {
-  color: white;
-  margin: 18px;
-}
 
 div.desc {
   height: 130px;
@@ -297,49 +307,103 @@ article > header > h4 {
   z-index: 3;
 }
 
-section#pro > section > article {
-  background: black;
-  color: gainsboro;
-  margin: 7% 0 0;
-  border: 30px solid rgb(226, 224, 224);
-}
-section#book > section > figure {
-  width: 25%;
-  min-width: 500px;
-  height: 239px;
-  border: 5px solid grey;
-  overflow: hidden;
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5px;
-  box-shadow: 1px 2px 10px black;
-}
-figure figcaption {
+section#pro {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+}
+
+section#pro ul {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section#pro ul li {
+  width: 200px;
+  height: 50px;
+  background: black;
+  color: white;
+  display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
+  box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.383);
+  transition: 0.2s;
+  margin: 5px;
+}
+
+section#pro ul li:hover {
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+section#pro ul li > img {
+  height: 20px;
+  width: auto;
+  margin: 0 5px;
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  cursor: pointer;
+  width: 500px;
   height: 239px;
+  margin: 10px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card.print{
+  width: 200px;
+  height: 200px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
   width: 100%;
-  color: white;
-  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
   position: absolute;
-  top: 239px;
-  left: 0;
-  transition-property: top;
-  transition: 1s;
-  padding: 2%;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
 }
-figure:not(:hover) {
-  filter: grayscale(0);
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  /* background-color: #bbb; */
+  color: black;
 }
-figure:hover {
-  filter: grayscale(1);
-  transition: 1s;
-}
-figure:hover figcaption {
-  top: 0px;
-}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: black;
+  box-shadow: 1px 2px 10px black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+} 

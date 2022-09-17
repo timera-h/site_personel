@@ -102,7 +102,7 @@ nav {
 
   p {
     margin: 0 auto 10%;
-    width: 80%;
+    width: 100%;
   }
 
   section#pro > h3,
@@ -176,7 +176,8 @@ nav {
 
   a.compose {
     display: block;
-    background: yellowgreen;
+    background: rgba(0, 0, 0, 0.699);
+    color: white;
     width: 100%;
     text-align: center;
     position: fixed;
@@ -214,7 +215,7 @@ nav {
   .nav-links {
     position: absolute;
     right: 0;
-    height: 90vh;
+    height: 92vh;
     top: 8vh;
     background: black;
     display: flex;
@@ -236,11 +237,11 @@ nav {
 
   .burger {
     display: block;
-    height: 7vh;
+    height: 4vh;
     width: 7vw;
     position: relative;
     top: 2vh;
-    left: calc(95% - 7vw);
+    left: calc(95% - 38vw);
     cursor: pointer;
   }
 

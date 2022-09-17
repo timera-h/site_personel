@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,20 +16,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
-    <!-- script js -->
-    <!-- <script>
-        $(function(){
-    $(window).scroll(function() {
-       if($(window).scrollTop() >= 100) {
-         $('header').addClass('scrolled');
-       }
-      else {
-        $('header').removeClass('scrolled');
-      }
-    });
-  });
-    </script> -->
     <script type="module" src="js/menu.js"></script>
     <script type="module" src="js/appel.js"></script>
     <script type="module" src="js/telephone.js"></script>
@@ -37,13 +27,12 @@
 
 <body>
     <header class="bg-black-90 fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l" id="header">
-        <h1 class="logo">Timera Hawa</h1>
-        <hr>
+        <h1 class="logo"> <a href="#"> Timera Hawa</a></h1>
         <nav>
             <ul class="nav-links">
                 <li><a href="#propos">Qui suis je ?</a></li>
-                <li><a href="#book">Réalisations Web et Print</a></li>
-                <li><a href="#pro">Contact</a></li>
+                <li><a href="#book">Réalisations Web & Print</a></li>
+                <li><a href="#pro">Contact & Réseaux</a></li>
             </ul>
             <div class="burger">
                 <span></span>
@@ -54,7 +43,7 @@
     <section>
         <p class="title-animation">Je suis
             <span class="txt-rotate" data-period="2000"
-                data-rotate='[  "développeuse web", "curieuse", "autodidacte", "joyeuse !"]'></span>
+                data-rotate='[  "développeuse web", "curieuse", "autodidacte"]'></span>
         </p>
         <!-- <h2>#<span></span></h2> -->
         <a href="#apropos" id="mouse"><span></span></a>
@@ -64,16 +53,24 @@
         <section id="propos">
             <article id="apropos">
                 <h3>A propos</h3>
-                <hr class="hr-propos">
-
-                <h4>Qui suis-je ?</h4>
-                <p> Ayant toujours été attiré par le numérique, l'informatique et
-                    la technologie, déterminée à atteindre mes objectifs, 
-                    c'est tout naturellement que je me suis orientée vers ce secteur.
-                    Mon parcour de formation dans lequel j'ai appris les bases fondamentales et de nouveaux langages de programmation,
-                    ce qui à révélé en moi une réelle apétence pour le développement web.             
-                Ouverte sur le monde j'aime les voyages,
-                    la cuisine découvrir d'autres cultures et différents modes de vie. </p>
+                <!-- <hr class="hr-propos"> -->
+                <article class="article-flex">
+                    <div class="text_propos">
+                        <h4>Pourquoi développeuse web ?</h4>
+                        <p> Ayant toujours été attiré par le numérique, l'informatique et
+                            la technologie, déterminée à atteindre mes objectifs,
+                            c'est tout naturellement que je me suis orientée vers ce secteur.
+                            Mon parcour de formation dans lequel j'ai appris les bases fondamentales et de nouveaux
+                            langages de programmation,
+                            ce qui à révélé en moi une réelle appétence pour le développement web.
+                        </p>
+                    </div>
+                    <div class="text_propos">
+                        <h4>Passion ?</h4>
+                        <p>La programmation bien sûr <i class="fas fa-smile-wink"></i>, Ouverte sur le monde j'aime voyager,
+                            la cuisine découvrir d'autres cultures et différents modes de vie. </p>
+                    </div>
+                </article>
             </article>
             <!-- <figure>
                 <img src="assets/img/hawa.png" alt="Nom prenom">
@@ -82,200 +79,154 @@
         <!-- début Réalisation web et print -->
         <section id="book">
             <h3 class="realisation">Réalisations Web</h3>
-            <hr>
             <section>
-                <figure><img src="assets/img/marvel-vs-dccomics.png" alt="Salsa">
-                    <figcaption><p>Marvel x Dc commics</p>
-                         <p>Réaliser en groupe en Methode agile Scrum. AJAX faire une appel API avec axios.</p>
-                        <p>Technos utilisé: HTML5 CSS3 JS </p>
-                    </figcaption>
-                </figure>
-                <figure><img src="assets/img/helloada.png" alt="Salsa">
-                    <figcaption><br>
-                        <br>
-                        <p>Helloada</p>
-                        <p>Insertion des femmes dans la tech, site réalisé au cours de mon stage</p>
-                        <p> Technos utilisé: 
-                            <br> Frontend: Handlebars, JS
-                        <br>Backend: Express, Node, Mongodb </p>
-
-                        <!--
-                        <br> Fonctionalitées:
-                        <br> - Inscription candidats / entreprises
-                        <br> - Connexion candidats / entreprises
-                        <br> - Profil candidat / entreprise
-                        <br> - Modification des données utilisateurs
-                        <br> - Dashboard Admin 
-                        <br> - Annonce d'offre d'emploi -->
-                    </figcaption>
-                </figure>
-                <figure><img src="assets/img/mali-tijara.png" alt="Salsa">
-                    <figcaption> <br><br>
-                        <p>Mali Tijara</p>
-                        <p>Projet chef d'oeuvre, site e-commerce vente de produits naturels du mali</p>
-                        <p>Technos utilisé: Mern stack
-                            <br> Frontend: React
-                            <br> Backend: Mongodb, Express, Node
-                        </p>
-                    </figcaption>
-                </figure>
-                <figure><img src="assets/img/lipstick.png" alt="Salsa">
-                    <figcaption>Légende de l'image</figcaption>
-                </figure>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/img/marvel-vs-dccomics.png" alt="marvel et dc comics"
+                                style="border-radius: 20px; box-shadow: 1px 2px 10px black;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>Marvel x Dc commics</h4>
+                            <p>Réaliser en groupe en Methode agile Scrum. AJAX faire une appel API avec axios.</p>
+                            <p>Technos utilisée: HTML5 CSS3 JS </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/img/helloada.png" alt="helloada"
+                                style="border-radius: 20px; box-shadow: 1px 2px 10px black;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>Helloada</h4>
+                            <p>Insertion des femmes dans la tech, site réalisé au cours de mon stage</p>
+                            <p> Technos utilisée:
+                                <br> Frontend: Handlebars, JS
+                                <br>Backend: Express, Node, Mongodb </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/img/mali-tijara.png" alt="mali tijara"
+                                style="border-radius: 20px; box-shadow: 1px 2px 10px black;">
+                        </div>
+                        <div class="flip-card-back">
+                            <h4>Mali Tijara</h4>
+                            <p>Projet chef d'oeuvre, site e-commerce vente de produits naturels du mali</p>
+                            <p>Technos utilisée: Mern stack
+                                <br> Frontend: React
+                                <br> Backend: Mongodb, Express, Node
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/img/lipstick.png" alt="lipstick make up"
+                                style="border-radius: 20px; box-shadow: 1px 2px 10px black;">
+                        </div>
+                        <a target="new" href="https://flamboyant-davinci-ba1332.netlify.app/">
+                            <div class="flip-card-back">
+                                <h4>Lipstick Make-Up</h4>
+                                <p>Réaliser en groupe lors d'un TP</p>
+                                <p>Technos tilisée: HTML5 CSS3 JS</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </section>
             <h3 class="realisation">Réalisations Print</h3>
-            <hr>
             <section>
-                <figure><img src="assets/img/Ours-et-tasse.png" alt="Salsa">
-                    <figcaption><p>Ours + tasse</p>
-                        <p>Logiciel graphique: Illustrator </p> <p>Outils utilisé: Pathfinder</p> </figcaption>
-                </figure>
-                <figure><img src="assets/img/vase.png" alt="Salsa">
-                    <figcaption><p>Vase</p>
-                        <p>Logiciel graphique: Illustrator</p>
-                    <p>Outils utilisé: Dégradé et Ombre</p></figcaption>
-                </figure>
-                <figure><img src="assets/img/rose-2.png" alt="Salsa">
-                    <figcaption><p>Rose</p>
-                        <p>Logiciel graphique: Photoshop</p>
-                    <p>Outils utilisé: Sélection (détourage de photo)</p></figcaption>
-                </figure>
-                <figure><img src="assets/img/gif-anime.gif" alt="Salsa">
-                    <figcaption><p>Gif animé</p>
-                        <p>Logiciel graphique: Photoshop</p>
-                    <p>Outils utilisé: Montage</p></figcaption>
-                </figure>
+                <div class="flip-card print">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/img/Ours-et-tasse.png" alt="ours avec une tasse"
+                                style="border-radius: 20px; box-shadow: 1px 2px 10px black;">
+                        </div>
+                        <a href="/assets/img/Ours-et-tasse.png" target=_blank>
+                            <div class="flip-card-back">
+                                <h4>Ours + tasse</h4>
+                                <p>Logiciel graphique: Illustrator </p>
+                                <p>Outils utilisé: Pathfinder</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="flip-card print">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/img/vase.png" alt="vase"
+                                style="border-radius: 20px; box-shadow: 1px 2px 10px black;">
+                        </div>
+                        <a href="/assets/img/vase.png" target=_blank>
+                            <div class="flip-card-back">
+                                <h4>Vase</h4>
+                                <p>Logiciel graphique: Illustrator</p>
+                                <p>Outils utilisé: Dégradé et Ombre</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="flip-card print">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/img/rose-2.png" alt="rose"
+                                style="border-radius: 20px; box-shadow: 1px 2px 10px black;">
+                        </div>
+                        <a href="/assets/img/rose-2.png" target=_blank>
+                            <div class="flip-card-back">
+                                <h4>Rose</h4>
+                                <p>Logiciel graphique: Photoshop</p>
+                                <p>Outils utilisé: Sélection (détourage de photo)</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="flip-card print">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="assets/img/gif-anime.gif" alt="git animé"
+                                style="border-radius: 20px; box-shadow: 1px 2px 10px black;">
+                        </div>
+                        <a href="/assets/img/gif-anime.gif" target=_blank>
+                            <div class="flip-card-back">
+                                <h4>Gif animé</h4>
+                                <p>Logiciel graphique: Photoshop</p>
+                                <p>Outils utilisé: Montage</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </section>
         </section>
-        <!-- fin réalisation -->
-        <!-- <section id="technique">
-
-            <h3>Compétences Techniques</h3>
-            <hr>
-            <section>
-                <article>
-
-                    <hgroup>
-                        <h5>45%</h5>
-                        <h5>69%</h5>
-                    </hgroup>
-
-                    <div>
-
-                        <div class="desc">
-                            <p>Maquetter une application<span> 45%</span></p>
-                            <progress max="100" value="45"></progress>
-                        </div>
-
-                        <div class="desc">
-                            <p>Html CSS JS<span> 69%</span></p>
-                            <progress max="100" value="69"></progress>
-                        </div>
-
-                    </div>
-                </article>
-                <article>
-                    <hgroup>
-                        <h5>72%</h5>
-                        <h5>20%</h5>
-                    </hgroup>
-
-                    <div>
-
-                        <div class="desc">
-                            <p>Framework<span> 72%</span></p>
-                            <progress max="100" value="72"></progress>
-                        </div>
-
-                        <div class="desc">
-                            <p>Gestion de Projet (Methode Agile)<span> 20%</span></p>
-                            <progress max="100" value="20"></progress>
-                        </div>
-
-                    </div>
-
-                </article>
-            </section>
-        </section> -->
-
         <section id="pro">
-            <h3>Contact</h3>
-            <hr>
-           <!--  <section>
-                <article>
-                    <header>
-                        <h2 title="lien">Societe ou Stage</h2>
-                        <h3>lieu ou le poste</h3>
-                        <h4>2000/2000</h4>
-                    </header>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Fugiat, aliquam unde alias illum ipsum voluptatibus,
-                        quaerat quibusdam quia nesciunt nisi laborum iusto saepe
-                        maxime vitae doloremque temporibus voluptatem tenetur nihil.
-                    </p>
-                </article>
-
-                <article>
-                    <header>
-                        <h2>Societe ou Stage</h2>
-                        <h3>lieu ou le poste</h3>
-                        <h4>2000/2000</h4>
-                    </header>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Fugiat, aliquam unde alias illum ipsum voluptatibus,
-                        quaerat quibusdam quia nesciunt nisi laborum iusto saepe
-                        maxime vitae doloremque temporibus voluptatem tenetur nihil.
-                    </p>
-                </article>
-
-            </section>
-            <h3>Expériences Professionnelles</h3>
-            <hr>
-            <section>
-                <article>
-                    <header>
-                        <h2>Societe ou Stage</h2>
-                        <h3>lieu ou le poste</h3>
-                        <h4>2000/2000</h4>
-                    </header>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Fugiat, aliquam unde alias illum ipsum voluptatibus,
-                        quaerat quibusdam quia nesciunt nisi laborum iusto saepe
-                        maxime vitae doloremque temporibus voluptatem tenetur nihil.
-                    </p>
-                </article>
-
-                <article>
-                    <header>
-                        <h2>Societe ou Stage</h2>
-                        <h3>lieu ou le poste</h3>
-                        <h4>2000/2000</h4>
-                    </header>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Fugiat, aliquam unde alias illum ipsum voluptatibus,
-                        quaerat quibusdam quia nesciunt nisi laborum iusto saepe
-                        maxime vitae doloremque temporibus voluptatem tenetur nihil.
-                    </p>
-                </article>
-
-            </section> -->
+            <h3>Contact & Réseaux</h3>
             <ul>
-                <li><a href="mailto:timera.barry@gmail.com" title="lien">Envoyer un mail</a></li>
-                <li><a href="https://fr.linkedin.com/in/hawa-timera-0981a81a3" title="lien"
-                        target="new">Linkedin</a></li>
-                <li id="call"> <a href="" class="compose">Appeler</a></li>
+                <li><img src="./assets/img/envelope-solid.png" alt="mail"> <a href="mailto:timera.barry@gmail.com"
+                        title="lien">Envoyer un mail</a></li>
+                <li><img src="./assets/img/linkedin-in-brands.png" alt="linkedin"> <a
+                        href="https://fr.linkedin.com/in/hawa-timera-0981a81a3" title="lien" target="new">Linkedin</a>
+                </li>
+                <li> <img src="/assets/img/github-brands.png" alt="github" /> <a target="new"
+                        href="https://github.com/timera-h">Github</a> </li>
+                <li><img src="/assets/img/codewars.png" alt="codewars"> <a target="new"
+                        href="https://www.codewars.com/users/Hawa-dev">Codewars</a></li>
+                <li id="call"><img src="./assets/img/phone-alt-solid.png" alt="telephone"> <a href=""
+                        class="compose">Appeler</a></li>
+                <li><img src="/assets/img/file-pdf-solid.png" alt=""><a href="/assets/doc/cv-hawa-timera.pdf"
+                        target=_blank>Mon CV</a></li>
             </ul>
         </section>
-    
+
     </main>
 
-
-    <!-- bg video -->
-    <!-- <video autoplay muted id="bgvideo" loop>
-        <source src="assets/video/slide.mp4" type="video/mp4">
-    </video> -->
     <figure id="bgvideo">
-        <img src="assets/img/th.svg" alt="logo">
+        <!-- <img src="assets/img/th.png" alt="logo"> -->
     </figure>
 </body>
 
